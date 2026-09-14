@@ -31,6 +31,17 @@ npm run preview # serve the production build
 - Everything is saved under the `cat-tracker-v1` key in `localStorage` — no account, no server.
 - Export a backup from **Settings → Export backup** and import it on any other browser/device.
 
+## 🌐 Live on GitHub Pages
+
+Pushing to `main` auto-builds and deploys to **GitHub Pages** via the included
+`.github/workflows/deploy-pages.yml` workflow:
+
+**https://prashantj27.github.io/cat-2026-prep-tracker/**
+
+Note: the live site uses your browser's `localStorage` per device — data does **not**
+sync across devices. Use **Settings → Export** on one device and **Import** on another
+to migrate. (Build base is configured in `vite.config.js`.)
+
 ## 🛠 Tech
 
 - React 18 + Vite 5, plain hand-written CSS (no UI framework), Recharts for trends.
